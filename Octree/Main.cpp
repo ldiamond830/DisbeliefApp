@@ -1,0 +1,15 @@
+/*----------------------------------------------
+Programmer: Alberto Bobadilla (labigm@rit.edu)
+----------------------------------------------*/
+// Include standard headers
+#include "Main.h"
+
+int main(void)
+{
+	Application* pApp = new Application();
+	pApp->Init("", BTX::eBTX_RESOLUTIONS::RES_C_1920x1080_16x9_FULLHD, false, false);
+	pApp->Run();
+	SafeDelete(pApp);
+	//_CrtDumpMemoryLeaks();
+	return 0;
+}
